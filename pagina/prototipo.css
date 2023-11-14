@@ -22,3 +22,11 @@ a{
 	font-family:math;
 	font-weight:bold;
 }
+
+h1{
+	margin-bottom:10vw;
+}
+
+#tarjetas{
+	margin-right:2vw;
+}
