@@ -1,0 +1,24 @@
+@font-face{
+	font-family:"Starjedi";
+	src: url("Starjedi.ttf");
+}
+#titulo{
+	/* font-family:Starjedi; */
+	/* font-size:8vw;
+	margin-right:5vw; */
+	/* -webkit-text-stroke: 0.1vw yellow; */
+	/* color: black;  */
+}
+#color:hover{
+    /* background-color: aliceblue; */
+    filter:alpha(opacity=0);
+}
+
+#buscar{
+	/* background-color=black; */
+}
+
+a{
+	font-family:math;
+	font-weight:bold;
+}
