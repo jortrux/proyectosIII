@@ -27,6 +27,17 @@ h1{
 	margin-bottom:10vw;
 }
 
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+th{
+	font-size: 28px;
+}
+td {
+	padding: 10px;
+}
+
 #tarjetas{
 	margin-right:2vw;
 }
