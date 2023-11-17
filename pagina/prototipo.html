@@ -6,153 +6,308 @@
     <title>Prototipo</title>
     <link href="prototipo.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script defer src="prototipo.js"></script>
   </head>
   <body class="bg-warning bg-opacity-50 text-white" style="background-image: linear-gradient(to right bottom, #65b3e1, #45bee4, #1fc9e0, #0ad3d6, #34dbc5, #50e0b9, #6ce5ac, #86e99e, #9aed96, #aff18f, #c3f488, #d8f683);"); background-size: cover;">
     <nav class="navbar navbar-expand-lg bg-white bg-opacity-50 rounded ">
         <div class="container-fluid ">
             <!-- nombre del nav que se ve a la izquierda del todo -->
-            <a class="navbar-brand text-muted" href="#">EscapeRooms.es</a>
+            <a class="navbar-brand text-muted" href="prototipo.html">EscapeRooms.es</a>
             
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <!-- lista de botones dentro del nav -->
               <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <!-- te lleva al inicio -->
                 <li class="nav-item">
-                  <a class="nav-link active text-muted" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link active text-muted" aria-current="page" href="prototipo.html">Inicio</a>
                 </li>
                 <!-- boton de inicio de sesion -->
                 <li class="nav-item">
-                  <a class="nav-link text-muted" href="#">iniciar sesion</a>
+                  <a class="nav-link text-muted" href="#">Iniciar sesion</a>
                 </li>
-                <!-- tav de seleccion -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Genero
-                  </a>
-                  <!-- opciones del desplegable de arriba con otra lista -->
-                  <ul class="dropdown-menu text-muted">
-                    <li><a class="dropdown-item" href="#">Terror</a></li>
-                    <li><a class="dropdown-item" href="#">Aventura</a></li>
-                    <li><a class="dropdown-item" href="#">misterio</a></li>
-                    <li><a class="dropdown-item" href="#">fantasia</a></li>
-                    <li><a class="dropdown-item" href="#">futurista</a></li>
-                    <!-- no se que hacer con esto pero esteticamente queda bien -->
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">por defecto</a></li>
-                  </ul>
-                </li>
+				<!-- novedades -->
+                <li class="nav-item">
+					<a class="nav-link active text-muted" aria-current="page" href="news.html">Novedades</a>
+				</li>
+				<!-- sobre nosotros -->
+				<li class="nav-item">
+					<a class="nav-link active text-muted" aria-current="page" href="sobreNosotros.html">Sobre nosotros</a>
+				</li>
               </ul>
             </div>
           </div>
 	  </nav>
-	  <i class="bi bi-person-circle"></i>
-    <h1 class="text-center mt-3" id="titulo">MilAnuncios.es</h1>
+	  <!-- <i class="bi bi-person-circle"></i> -->
+    <h1 class="text-center mt-2" id="titulo">MilAnuncios.es</h1>
     <!-- grueso de la pagina -->
     <div class = "d-inlines-flex gap-1 text-center">
-            <div class="row mt-5">
-                <!-- columna de info -->
-                <div class="col">
-                  <br>
-                    <div class="card mb-3 bg-light bg-opacity-75" style="max-width: 40vw; height: 40vw;">
-                        <!-- imagen del mapa en su columna -->
-                        <div class="row">
-                                <img src="mapa.png" class="img-fluid rounded-start" alt="..." style="max-width: 50vw; max-height: 30vw;">
-                        </div>
-                        <!-- columna de la derecha con un card body para el texto al lado de la imagen -->
-                        <div class="row g-0">
-                          <!-- <div class="col-md-8"> -->
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                            </div>
-                          <!-- </div> -->
-                        </div>
-                        
-                      </div>
-                </div>
-                
-                <!-- columna de seleccion -->
-                <div class="col" id="tarjetas">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="float:right">
-                        filtros
-                    </a>
-                    <!-- opciones del desplegable de arriba con otra lista -->
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">precio</a></li>
-                        <li><a class="dropdown-item" href="#">accesibilidad</a></li>
-                        <li><a class="dropdown-item" href="#">popular</a></li>
-                        <li><a class="dropdown-item" href="#">distancia</a></li>
-                    </ul>
-                    <br>
-                    <!-- una lista con las tarjetas de info -->
-                    <ul>
-                        <!-- tarjeta1 -->
-                        <div class="card mb-3 bg-light bg-opacity-75" onclick="funcion()" id="color">
-                            <!-- imagen tarjeta -->
-                            <!-- <img src="card-1.jpg" class="card-img-top rounded-circle" alt="..."> -->
-                            <!-- cuerpo con texto y titulo -->
-                            <div class="card-body">
-                                <h5 class="card-title">Escape Room 1</h5>
-                                <p class="card-text">ejemplo con informacion de la scaperrom en cuestion</p>
-                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <!-- tarjeta2 -->
-                        <div class="card mb-3 bg-light bg-opacity-75">
-                           <!-- imagen tarjeta -->
-                           <!-- <img src="card-1.jpg" class="card-img-top rounded-circle" alt="..."> -->
-                           <!-- cuerpo con texto y titulo -->
-                            <div class="card-body">
-                                <h5 class="card-title">Escape Room 2</h5>
-                                <p class="card-text">ejemplo con informacion de la scaperrom en cuestion</p>
-                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <!-- tarjeta3 -->
-                        <div class="card mb-3 bg-light bg-opacity-75">
-                            <!-- imagen tarjeta -->
-                            <!-- <img src="card-1.jpg" class="card-img-top rounded-circle" alt="..."> -->
-                            <!-- cuerpo con texto y titulo -->
-                            <div class="card-body">
-                                <h5 class="card-title">Escape Room 3</h5>
-                                <p class="card-text">ejemplo con informacion de la scaperrom en cuestion</p>
-                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <!-- tarjeta4 -->
-                        <div class="card mb-3 bg-light bg-opacity-75">
-                          <!-- imagen tarjeta -->
-                          <!-- <img src="card-1.jpg" class="card-img-top rounded-circle" alt="..."> -->
-                          <!-- cuerpo con texto y titulo -->
-                          <div class="card-body">
-                              <h5 class="card-title">Escape Room 4</h5>
-                              <p class="card-text">ejemplo con informacion de la scaperrom en cuestion</p>
-                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                          </div>
-                      </div>
-                      <!-- tarjeta5 -->
-                      <div class="card mb-3 bg-light bg-opacity-75" id="color">
-                        <!-- imagen tarjeta -->
-                        <!-- <img src="card-1.jpg" class="card-img-top rounded-circle" alt="..."> -->
-                        <!-- cuerpo con texto y titulo -->
-                        <div class="card-body">
-                            <h5 class="card-title">Escape Room 5</h5>
-                            <p class="card-text">ejemplo con informacion de la scaperrom en cuestion</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                      <div class="card mb-3 bg-light bg-opacity-75" id="color">
-                        <!-- imagen tarjeta -->
-                        <!-- <img src="card-1.jpg" class="card-img-top rounded-circle" alt="..."> -->
-                        <!-- cuerpo con texto y titulo -->
-                        <div class="card-body">
-                            <h5 class="card-title">Escape Room 5</h5>
-                            <p class="card-text">ejemplo con informacion de la scaperrom en cuestion</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                    </ul>
+	
+		<!-- tav de filtros-->
+		<nav class="navbar navbar-expand-lg bg-white rounded " style="max-width: 20vw;margin-left: auto; margin-right:2vw">
+			<div class="container-fluid ">
+				<!-- tav de genero -->
+				<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Genero
+						</a>
+						<!-- opciones del desplegable de arriba con otra lista -->
+						<ul class="dropdown-menu text-muted">
+							<li><a class="dropdown-item" href="#">Terror</a></li>
+							<li><a class="dropdown-item" href="#">Aventura</a></li>
+							<li><a class="dropdown-item" href="#">misterio</a></li>
+							<li><a class="dropdown-item" href="#">fantasia</a></li>
+							<li><a class="dropdown-item" href="#">futurista</a></li>
+							<!-- no se que hacer con esto pero esteticamente queda bien -->
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">por defecto</a></li>
+						</ul>
+					</li>
+					<!-- tav de filtros -->
+					<li>
+						<a class="nav-link dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+							filtros
+						</a>
+						<!-- opciones del desplegable de arriba con otra lista -->
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">precio</a></li>
+							<li><a class="dropdown-item" href="#">accesibilidad</a></li>
+							<li><a class="dropdown-item" href="#">popular</a></li>
+							<li><a class="dropdown-item" href="#">distancia</a></li>
+						</ul>
+					</li>
+					<!--cantidad de personas-->
+					<li>
+						<a class="nav-link dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+							numero de personas
+						</a>
+						<!-- opciones del desplegable de arriba con otra lista -->
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">< 4</a></li>
+							<li><a class="dropdown-item" href="#">> 5</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div class="row">
+		
+			<!-- columna de info -->
+			<div class="col" style="margin-left:3vw;">
+				
+				
+				<!-- <div class="row"> -->
+					<!-- ------------------------- -->
+					<nav class="navbar navbar-expand-lg bg-white rounded d-flex justify-content-start" style="margin-left:6vw;position:fixed;">
+						<div id="pop" class="container-fluid ">
+							<div   class="collapse navbar-collapse" id="navbarScroll">
+								<!-- lista de botones dentro del nav -->
+							  <ul  class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+								<!-- te lleva al inicio -->
+								<li class="nav-item">
+								  <a class="nav-link active text-muted" aria-current="page" href="#">Inicio</a>
+								</li>
+								<!-- boton de inicio de sesion -->
+								<li class="nav-item">
+								  <a class="nav-link text-muted" href="#">Iniciar sesion</a>
+								</li>
+								<!-- novedades -->
+								<li class="nav-item">
+									<a class="nav-link active text-muted" aria-current="page" href="#">Novedades</a>
+								</li>
+								<!-- sobre nosotros -->
+								<li class="nav-item">
+									<a class="nav-link active text-muted" aria-current="page" href="#">Sobre nosotros</a>
+								</li>
+							  </ul>
+							</div>
+						  </div>
+					  </nav>
+					  <!-- --------------------- -->
+					  <br>
+					  <br>
+					  <br>
+				<!-- <div> -->
+				<!-- <div class="row"> -->
+					  
+					<div class="card mb-3 bg-light bg-opacity-75 rounded" style="max-width: 40vw; height: 40vw; position: fixed;">
+						<!-- imagen del mapa en su columna -->
+						<div class="row">
+								<img src="imagenes/mapa.png" class="img-fluid rounded-start rounded" alt="..." <!--style="max-width: 50vw; max-height: 30vw;"-->
+						</div>
+						<!-- columna de la derecha con un card body para el texto al lado de la imagen -->
+						<div class="row g-0">
+						  <!-- <div class="col-md-8"> -->
+							<div class="card-body">
+							  <h5 class="card-title">Card title</h5>
+							  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+							</div>
+						  <!-- </div> -->
+						</div>
+						
+					</div>
+				<!-- </div> -->
+			</div>
+			
+			<!-- columna de seleccion -->
+			<div class="col" id="tarjetas">
+				<br>
+				<!-- una lista con las tarjetas de info -->
+				<!-- <ul> -->
+					<div class="row">
+						<!-- tarjeta1 -->
+						<div class="col">
+							<div class="card mb-3 bg-light bg-opacity-75" onclick="funcion()" id="color">
+								<div class="row">
+									<!-- imagen tarjeta -->
+									<img src="imagenes/escaperoom1.jpg" class="card-img-top rounded" alt="..."style=" height:20vw;">
+								</div>
+								
+								<!-- cuerpo con texto y titulo -->
+								<div class="card-body">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                    </svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+										<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+									</svg>
+									<hr>
+									<h5 class="card-title">Aprobado de proyectos3</h5>
+									<p class="card-text">Una terrorifica historia sobre el trabajo en equipo, y tratar con gente</p>
+									<p class="card-text"><small class="text-body-secondary">Nadie volvio a ver a Jorge...</small></p>
+								</div>
+							</div>
+						</div>
+						<!-- tarjeta2 -->
+						<div class="col">
+							<div class="card mb-3 bg-light bg-opacity-75" onclick="funcion()" id="color">
+								<div class="row">
+									<!-- imagen tarjeta -->
+									<img src="imagenes/escaperoom6.jpg" class="card-img-top rounded" alt="..." style=" height:20vw;">
+								</div>
+								<!-- cuerpo con texto y titulo -->
+								<div class="card-body">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                    </svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+										<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+									</svg>
+									<hr>
+									<h5 class="card-title">Blade runner</h5>
+									<p class="card-text">Una aventura distopica y futurista en un mundo sin ley</p>
+									<p class="card-text"><small class="text-body-secondary">Por la revolucion!!</small></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<!-- tarjeta3 -->
+						<div class="col">
+							<div class="card mb-3 bg-light bg-opacity-75" onclick="funcion()" id="color">
+								<div class="row">
+									<!-- imagen tarjeta -->
+									<img src="imagenes/escaperoom3.jpg" class="card-img-top rounded" alt="..."style=" height:20vw;">
+								</div>
+								
+								<!-- cuerpo con texto y titulo -->
+								<div class="card-body">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                    </svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+										<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+									</svg>
+									<hr>
+									<h5 class="card-title">Mareas misteriosas</h5>
+									<p class="card-text">Aqui tendras qeue resolver el asesinato del capitan, en mitad de una tormenta</p>
+									
+									<p class="card-text"><small class="text-body-secondary">Arrrrr grumetillos</small></p>
+								</div>
+							</div>
+						</div>
+						<!-- tarjeta4 -->
+						<div class="col">
+							<div class="card mb-3 bg-light bg-opacity-75" onclick="funcion()" id="color">
+								<div class="row">
+									<!-- imagen tarjeta -->
+									<img src="imagenes/escaperoom4.jpg" class="card-img-top rounded" alt="..." style=" height:20vw;">
+								</div>
+								
+								<!-- cuerpo con texto y titulo -->
+								<div class="card-body">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                    </svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+										<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+									</svg>
+									<hr>
+									<h5 class="card-title">La habitacion de Juanlu</h5>
+									<p class="card-text">Descubre paramos nunca vistos y algun que otro calzoncillo en la jungla que es esta habitacion</p>
+									<p class="card-text"><small class="text-body-secondary">Mejor si ignoras el olor</small></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<!-- tarjeta1 -->
+						<div class="col">
+							<div class="card mb-3 bg-light bg-opacity-75" onclick="funcion()" id="color">
+								<div class="row">
+									<!-- imagen tarjeta -->
+									<img src="imagenes/escaperoom5.jpg" class="card-img-top rounded" alt="..."style=" height:20vw;">
+								</div>
+								
+								<!-- cuerpo con texto y titulo -->
+								<div class="card-body">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                    </svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+										<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+									</svg>
+									<hr>
+									<h5 class="card-title">Asalto al banco</h5>
+									<p class="card-text">Rapido! reune a tu equipo y huye, os han pillado y hay que reaccionar</p>
+									<p class="card-text"><small class="text-body-secondary">Bad boys bad boys!!</small></p>
+								</div>
+							</div>
+						</div>
+						<!-- tarjeta2 -->
+						<div class="col">
+							<div class="card mb-3 bg-light bg-opacity-75" onclick="funcion()" id="color">
+								<div class="row">
+									<!-- imagen tarjeta -->
+									<img src="imagenes/escaperoom2.jpeg" class="card-img-top rounded" alt="..." style=" height:20vw;">
+								</div>
+								
+								<!-- cuerpo con texto y titulo -->
+								<div class="card-body">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                    </svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+										<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+										<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+									</svg>
+									<hr>
+									<h5 class="card-title">El amor de esa mujer</h5>
+									<p class="card-text">Una increible historia sobre un ingeniero, donde descubriremos que moriremos solos</p>
+									<p class="card-text"><small class="text-body-secondary">Si la vida te da limones... llora</small></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- </ul> -->
             </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
