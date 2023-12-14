@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      background: url('tu-imagen-de-fondo.jpg') center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .card {
+        background: rgba(148, 147, 147, 0.295); 
+    }
+  </style>
+</head>
+<body class="bg-warning bg-opacity-50 text-white" style="background-image: linear-gradient(to right top, #06142e, #091a35, #0e1f3d, #122545, #162b4d, #30385b, #47466a, #5d5578, #88718f, #af91a6, #d3b3bf, #f5d7db);"); background-size: cover;">
+
+    <nav class="navbar navbar-expand-lg bg-white bg-opacity-50 rounded ">
+        <div class="container-fluid ">
+            <!-- nombre del nav que se ve a la izquierda del todo -->
+            <a class="navbar-brand text-muted" href="prototipo.html">HelpRoom.es</a>
+            
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <!-- lista de botones dentro del nav -->
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <!-- te lleva al inicio -->
+                <li class="nav-item">
+                  <a class="nav-link active text-muted" aria-current="page" href="prototipo.html">Inicio</a>
+                </li>
+                <!-- boton de inicio de sesion -->
+                <li class="nav-item">
+                  <a class="nav-link text-muted" href="Sesion.html">Iniciar sesion</a>
+                </li>
+				<!-- novedades -->
+                <li class="nav-item">
+					<a class="nav-link active text-muted" aria-current="page" href="news.html">Novedades</a>
+				</li>
+				<!-- sobre nosotros -->
+				<li class="nav-item">
+					<a class="nav-link active text-muted" aria-current="page" href="sobreNosotros.html">Sobre nosotros</a>
+				</li>
+              </ul>
+            </div>
+          </div>
+	  </nav>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card text-white">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4"><i class="fas fa-user"></i> Iniciar Sesión</h2>
+
+            <form onsubmit="capturarDatos(event)">
+              <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="usuario" placeholder="Ingrese su usuario" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                  </div>
+                  <input type="password" class="form-control" id="contrasena" placeholder="Ingrese su contraseña" required>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <script>
+    function capturarDatos(event) {
+      event.preventDefault(); // Evita que el formulario se envíe normalmente
+      
+      // Obtener valores de los campos
+      var usuario = document.getElementById("usuario").value;
+      var contrasena = document.getElementById("contrasena").value;
+      
+      // Imprimir en la consola
+      console.log("Usuario:", usuario);
+      console.log("Contraseña:", contrasena);
+    }
+  </script>
+</body>
+</html>

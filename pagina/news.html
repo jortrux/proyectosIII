@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="news.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
-<body class="bg-warning bg-opacity-50 text-white" style="background-image: linear-gradient(to right bottom, #65b3e1, #45bee4, #1fc9e0, #0ad3d6, #34dbc5, #50e0b9, #6ce5ac, #86e99e, #9aed96, #aff18f, #c3f488, #d8f683); background-size: cover;">
+<body class="bg-warning bg-opacity-50 text-white" style="background-image: linear-gradient(to right top, #06142e, #091a35, #0e1f3d, #122545, #162b4d, #30385b, #47466a, #5d5578, #88718f, #af91a6, #d3b3bf, #f5d7db); background-size: cover;">
     <nav class="navbar navbar-expand-lg bg-white bg-opacity-50 rounded ">
         <div class="container-fluid ">
             <!-- nombre del nav que se ve a la izquierda del todo -->
-            <a class="navbar-brand text-muted" href="prototipo.html">EscapeRooms.es</a>
+            <a class="navbar-brand text-muted" href="prototipo.html">HelpRoom.es</a>
             
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <!-- lista de botones dentro del nav -->
@@ -21,7 +22,7 @@
                 </li>
                 <!-- boton de inicio de sesion -->
                 <li class="nav-item">
-                  <a class="nav-link text-muted" href="#">Iniciar sesion</a>
+                  <a class="nav-link text-muted" href="Sesion.html">Iniciar sesion</a>
                 </li>
 				<!-- novedades -->
                 <li class="nav-item">
@@ -80,11 +81,11 @@
                 <!-- imagen tarjeta -->
                 <!-- <img src="card-1.jpg" class="card-img-top rounded-circle" alt="..."> -->
                 <!-- cuerpo con texto y titulo -->
-                <div class="card-body">
-                    <h5 class="card-title">Nuevo local en Calle de Moratines</h5>
-                    <img src="imagenes/local.png" class="rounded" alt="..." width="350" height="250">
-                    <p class="card-text">Abre un nuevo local de escape rooms en Madrid, con nuevas aventuras de terror y fantasia.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <div class="card-body mx-2">
+                    <h5 class="card-title text-center">Nuevo local en Calle de Moratines</h5>
+                    <img src="imagenes/local.png" class="rounded text-center" alt="..." width="350" height="250">
+                    <p class="card-text text-center">Abre un nuevo local de escape rooms en Madrid, con nuevas aventuras de terror y fantasia.</p>
+                    <p class="card-text text-center"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                 </div>
             </div>
             
@@ -99,12 +100,12 @@
                 <!-- imagen tarjeta -->
                 <!-- <img src="card-1.jpg" class="card-img-top rounded-circle" alt="..."> -->
                 <!-- cuerpo con texto y titulo -->
-                <div class="card-body">
-                    <h5 class="card-title">Escape Room al 20% de descuento</h5>
-                    <img src="imagenes/escapeTerror3.png" class="rounded" alt="..." width="350" height="250">
-                    <p class="card-text">Oferta disponible del 10/11 al 26/11</p>
-                    <button type="button" class="btn btn-danger">Reservar</button>
-                    <p class="card-text"><small class="text-body-secondary">Last updated on 10/11/2023</small></p>
+                <div class="card-body mx-2">
+                    <h5 class="card-title text-center">Escape Room al 20% de descuento</h5>
+                    <img src="imagenes/escapeTerror3.png" class="rounded text-center" alt="..." width="350" height="250">
+                    <p class="card-text text-center">Oferta disponible del 10/11 al 26/11</p>
+                    <button type="button" class="btn btn-danger text-center" onclick="location.href='reservas.html'">Reservar</button>
+                    <p class="card-text" text-center><small class="text-body-secondary">Last updated on 10/11/2023</small></p>
                 </div>
             </div>
             <!-- tarjeta2 -->
@@ -112,12 +113,12 @@
                <!-- imagen tarjeta -->
                <!-- <img src="card-1.jpg" class="card-img-top rounded-circle" alt="..."> -->
                <!-- cuerpo con texto y titulo -->
-                <div class="card-body">
-                    <h5 class="card-title">Ven a celebrar tu cumpleaños</h5>
-                    <img src="imagenes/cumple.png" class="rounded" alt="..." width="350" height="250">
-                    <p class="card-text">Celebra tu cumpleaños con otras 4 personas y entra gratis.</p>
-                    <button type="button" class="btn btn-danger">Reservar</button>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 5 days ago</small></p>
+                <div class="card-body mx-2">
+                    <h5 class="card-title text-center">Ven a celebrar tu cumpleaños</h5>
+                    <img src="imagenes/cumple.png" class="rounded text-center" alt="..." width="350" height="250">
+                    <p class="card-text text-center">Celebra tu cumpleaños con otras 4 personas y entra gratis.</p>
+                    <button type="button" class="btn btn-danger text-center" onclick="location.href='reservas.html'">Reservar</button>
+                    <p class="card-text text-center"><small class="text-body-secondary">Last updated 5 days ago</small></p>
                 </div>
             </div>
             

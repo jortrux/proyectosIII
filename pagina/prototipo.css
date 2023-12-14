@@ -34,3 +34,8 @@ h1{
 #pop{
 	display:none;
 }
+
+body{
+	max-width: 99%;
+	max-height:90%;
+}
