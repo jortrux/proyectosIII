@@ -1,3 +1,3 @@
 # proyectosIII
-Nombre de la página | Inicio | Género | Sobre nosotros | Novedades/ Eventos | Inicio de sesión/cuenta | Reservas
-Filtros encima de las tarjetas meter otro para personas y hacerlos más visible.
+SI.
+este ultimo comit es un descarado intento de fingir que tenemos un producto minimo viable.
